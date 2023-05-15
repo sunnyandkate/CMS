@@ -1,0 +1,355 @@
+html{
+    height:100%;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      min-height:100vh;
+      font-family: 'Montserrat', sans-serif;
+      background: #268b9d;
+      background-image:url("images/moon2.png");
+      background-size:cover;   
+      background-repeat: no-repeat;
+  }
+  /*main*/
+  .container{  
+      min-height:100vh;   
+  }
+  .container h1{
+      color:rgb(20, 79, 137);
+  }
+  .post-img{
+    width:5rem;
+    height:5rem;
+  }
+  a{
+    text-decoration:none;
+    color:orange;
+  }
+
+ 
+  .main-container{
+    margin-top:0;
+  }
+ 
+  
+    /*login*/
+  .login-container{
+      font-family: 'Montserrat', sans-serif;  
+      width:100%;
+      height:100vh;
+  }
+    .login{
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      flex-direction: column;
+    }
+    .login h2{
+      font-family: 'Shadows Into Light Two', cursive;
+      color:beige;
+      text-shadow: 3px 3px 20px black;
+      text-transform: uppercase;
+      padding-top:3rem;
+      font-size:2rem;
+    }
+    .login-form{
+      width:50%;
+      background-color:rgb(46, 127, 158);
+     
+      border:.8rem solid #13313a;
+      box-shadow: 20px 20px 20px #13313a;
+      border-radius:1rem;
+      padding:2rem;
+      max-width: 25rem;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .login-form input{
+      outline:none;
+      color:#005680;
+      background-color:beige;
+      border-radius:1rem;
+      padding:.7rem;
+      display:block;
+      margin:1rem auto;
+      border:none;
+    }
+    .login-btn, .submit-btn{
+      background-color:#005680;
+      color:#2d8f41;
+      outline:none;
+      padding:.5rem 3rem;
+      border:.3rem solid #2d8f41;
+      border-radius:1rem;
+      box-shadow:2px 2px 10px #005680;
+      margin:auto;
+      cursor:pointer;
+      background-image:url("images/pumpkin2.png");
+  background-size:contain;
+    }
+    .login-btn:hover, .submit-btn:hover{
+      color:lightyellow;
+      background-color:#2d8f41;
+      border:.3rem solid #005680;
+      box-shadow:2px 2px 10px #2d8f41;
+      margin-top:2px;
+      margin-bottom:-2px;
+    }
+	
+	.sign-up{
+		text-align:end;
+		padding-top:1rem;
+	}
+ 
+  .logout{
+    display: flex;
+    justify-content: end;
+  }
+  .logout a{
+    font-size:1rem;
+    font-weight:400;
+    font-family:'Montserrat', sans-serif;
+    color:#2d8f41;
+    background-color: #005680;
+    border:.2rem solid #2d8f41;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:2rem;
+    padding:.5rem;
+    cursor:pointer;
+  }
+  .logout a:hover{
+    color:#005680;
+    background-color: #2d8f41;
+  }
+  
+ /*blog*/
+ .blog-container{
+	 
+	padding:2rem;
+	 
+	 
+ }
+ .col-left{
+	 
+	
+	 
+	 
+	 
+ }
+ .read-more-btn{
+	border-radius: 1rem;
+	padding:.5rem;
+	border:.2rem solid transparent;
+	margin-bottom:1rem;
+ }
+ .read-more-btn:hover{
+	 border:.2rem solid lightblue;
+	
+ }
+ /*nav*/
+ nav {
+  background-color:#1d5b67;
+  box-shadow: 2px 2px 2px #aaaab6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction:column;
+}
+nav a{
+	padding:2rem;
+}
+nav a:hover{
+	color:#d9cebb;
+}
+.blog-container{
+	display: flex;
+    justify-content: center;
+}
+/*add post*/
+.addPost-top{
+	font-size: 1rem;
+}
+.addPost-form{
+	display: flex;
+    flex-direction: column;
+    width: 80%;
+	max-width:20rem;
+    margin: 0 auto;
+}
+.addPost-form > input{
+	margin-bottom:1rem;
+}
+.addPost-form >label{
+	margin-bottom:.5rem;
+}
+/*admin*/
+.admin-container h1, 
+.admin-container h2{
+	text-align:center;
+	padding-top: 3rem;
+}
+    /*footer*/
+    footer{
+      font-family: 'Shadows Into Light Two', cursive;
+      color:#e0e6c4;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      align-self:stretch;
+      margin-top:7rem;
+      padding-left:1rem;
+      padding-right:1rem;
+	  font-size:1.1rem;
+    }
+    footer > .footer-right >  a{
+      color:#e0e6c4 !important;
+    }
+  .move, .move2, .move3, .move4, .move5{
+    width:8rem; 
+    position:relative; 
+    
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+    }
+    .move{
+      left:0;
+    top:20%;
+    animation-name: move;
+    }
+    .move2{
+      left:0;
+      top:10%;
+      animation-name: move2;
+    }
+    .move3{
+      left:5%;
+      top:70%;
+      animation-name: move3;
+    }
+    .move4{
+      left:0%;
+      top:80%;
+      animation-name: move4;
+    }
+    .move5{
+      right:5%;
+      top:15%;
+      animation-name: move5;
+    }
+    @keyframes move{
+          
+          0%{
+          
+              left: 10%;
+              top:25%;
+          }
+      15%{
+        left:15%;
+        top:30%;
+      }
+      20%{
+        left:20%;
+        top:50%;
+      }
+      30%{
+        left:40%;
+        top:30%;
+      }
+      40%{
+        left:50%;
+        top:20%;
+      }
+          50%{
+          
+              left:60%;
+        top:30%;
+              
+          }		
+      100%{
+        left:100%;
+        top:40%;
+      }
+      }
+   @keyframes move2{
+          
+    0%{left: 0%;top:15%; }
+    15%{left:10%;top:30%; }
+    20%{left:15%;top:40%; }
+    30%{ left:30%; top:25%; }
+    40%{left:40%;top:20%; }
+    50%{left:50%; top:30%; }		
+    70%{ left: 60%; top: 50%;}
+    80%{ left: 70%; top: 45%;}
+    90%{ left: 80%; top: 55%;}
+    95%{ left: 90%; top: 60%;}
+    100%{left:100%;top:40%; }
+    }
+    @keyframes move3{
+          
+      0%{left: 5%;top:70%; }
+      15%{left:10%;top:60%; }
+      20%{left:15%;top:40%; }
+      30%{ left:30%; top:50%; }
+      40%{left:40%;top:60%; }
+      50%{left:50%; top:70%; }		
+      70%{ left: 60%; top: 60%;}
+      80%{ left: 70%; top: 45%;}
+      90%{ left: 80%; top: 55%;}
+      95%{ left: 90%; top: 50%;}
+      100%{left:100%;top:40%; }
+      }
+      @keyframes move4{
+          
+        0%{left: 5%;top:70%; }
+        15%{left:10%;top:60%; }
+        20%{left:15%;top:40%; }
+        30%{ left:30%; top:50%; }
+        40%{left:40%;top:60%; }
+        50%{left:50%; top:70%; }		
+        70%{ left: 60%; top: 60%;}
+        80%{ left: 70%; top: 45%;}
+        90%{ left: 80%; top: 55%;}
+        95%{ left: 90%; top: 50%;}
+        100%{left:100%;top:40%; }
+        }
+        @keyframes move5{
+          
+          0%{left: 0%;top:15%; }
+          15%{left:10%;top:5%; }
+          20%{left:15%;top:10%; }
+          30%{ left:30%; top:20%; }
+          40%{left:40%;top:30%; }
+          50%{left:50%; top:40%; }		
+          70%{ left: 60%; top: 50%;}
+          80%{ left: 70%; top: 45%;}
+          90%{ left: 80%; top: 35%;}
+          95%{ left: 90%; top: 20%;}
+          100%{left:100%;top:10%; }
+          }
+  
+  
+    /*media queries*/
+    @media ( min-width: 600px){
+      .login-form{
+        background-image:url("images/pumpkin2.png");
+        background-size:cover;
+      }
+       
+    }
+	 @media ( min-width: 750px){
+      nav{
+		  flex-direction:row;
+	  }
+       
+    }
+	
+   
+    @media(max-height: 500px) and (orientation:landscape){
+     
+    }
